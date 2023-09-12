@@ -38,7 +38,7 @@ AdminOnly();
             </li>
         </ul>
         <span class="navbar-text me-4 fs-6">Bonjour, <?php echo $_SESSION['username']; ?> </span>
-        <a class="btn btn-outline-danger me-2" type="button" href="../config/logout.php">Deconnexion</a>
+        <a class="btn btn-outline-danger me-2" type="button" href="../config/logout.php">Déconnexion</a>
         </div>
     </div>
     </nav>
@@ -75,6 +75,7 @@ AdminOnly();
                                 <td>Supprimer</td>
                             </tr>
                             <tr>
+                                
                             <?php 
                                 while($row = mysqli_fetch_assoc($users))
                                 {
@@ -84,12 +85,18 @@ AdminOnly();
                             <td><?php echo $row['password']?></td>
                             <td><?php echo $row['perm']?></td>
                             
-                            <td><a href="./actions/delete.php?id=<?php echo $row["id"] ?>" class="btn btn-danger">Supprimer</a>
+                            <td>
+                                <a href="./actions/delete.php?id=<?php echo $row["id"] ?>">
+                                    <button type="submit" class="btn btn-danger" <?php if ($row['perm'] == 'Technicien') { ?> disabled <?php } ?>>Supprimer</button>
+                                </a>
+                            </td>
 
                             </tr>
+
                             <?php
                                 }
                             ?>
+                            
                         </table>
                     </div>
                 </div>
