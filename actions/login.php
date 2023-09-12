@@ -17,10 +17,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
     
     if (empty($uname)) {
-        header('Location: ../index.php?error=Username required');
+        header('Location: ../index.php?error=Utilisateur ne peut pas être vide !');
         exit();
     } elseif (empty($pass)) {
-        header('Location: ../index.php?error=Password required');
+        header('Location: ../index.php?error=Mot de passe ne peut pas être vide !');
         exit();
     }else{
 
@@ -40,12 +40,12 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 exit();
 
             }else{
-                header('Location: ../index.php?error=Wrong Login');
+                header("Location: ../index.php?error=Aucune information d'identification correspondante n'a été trouvée !");
                 exit();
             }
 
         }else{
-            header('Location: ../index.php?error=Wrong Login');
+            header("Location: ../index.php?error=Aucune information d'identification correspondante n'a été trouvée !");
             exit();
         }
     }

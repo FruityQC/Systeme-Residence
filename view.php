@@ -128,7 +128,7 @@ if (!isset($_GET['id'])) {
                     <form action="./actions/delete_note.php?id=<?php echo $id . "&noteid=" . $row['noteid'] ?>" method="post">
                     <div class="text-bg-secondary p-3 mt-3 rounded">
                         <div class="input-group mb-3">
-                                <input readonly type="text" class="form-control" value="<?php echo $row['user'] . " - " . $row['time'] . " - " . $row ['noteid'] ?>" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <input readonly type="text" class="form-control" value="<?php echo "Ajoutée par " . $row['user'] . " le " . GetHumanDate($row['time']) . " avec le ID de: " . $row ['noteid'] ?>" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
                                 <button class="btn btn-danger" type="delete" id="button-addon2">Supprimer</button>
                             </div>
                             <div class="input-group mt-2" data-bs-theme="light">

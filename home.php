@@ -92,7 +92,7 @@ $id = $room['id'];
                 <h6 class="card-text"><i class="fa-solid fa-address-card me-2"></i><?php echo GetRoom($id)['ass'] ?></h6>
 
                 <div class="d-grid gap-2 mt-3">
-                    <a href="./view.php?id=<?php echo $id ?>" class="btn btn-primary">Ouvrire</a>
+                    <a href="./view.php?id=<?php echo $id ?>" class="btn btn-primary">Ouvrir</a>
                 </div>
       </div>
     </div>
