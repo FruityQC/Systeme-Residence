@@ -19,13 +19,13 @@ if (!isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="https://kit.fontawesome.com/90d534048f.js" crossorigin="anonymous"></script>
-    <title>Maisonnee D'Antan</title>
+    <title>Maisonnée D'Antan</title>
 </head>
 <body data-bs-theme="dark">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Maisonnee D'Antan</a>
+            <a class="navbar-brand" href="#">Maisonnée D'Antan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,7 +47,7 @@ if (!isset($_GET['id'])) {
 
                 </ul>
                 <span class="navbar-text me-4 fs-6">Bonjour, <?php echo $_SESSION['username']; ?> </span>
-                <a class="btn btn-outline-danger me-2" type="button" href="./config/logout.php">Deconnexion</a>
+                <a class="btn btn-outline-danger me-2" type="button" href="./config/logout.php">Déconnexion</a>
             </div>
         </div>
     </nav>
@@ -76,7 +76,7 @@ if (!isset($_GET['id'])) {
                     <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" name="status">
                         <option value="NORM"<?php if (GetRoom($id)['status'] == "NORM") {?> selected <?php }?>>Normal</option>
                         <option value="RDV"<?php if (GetRoom($id)['status'] == "RDV") {?> selected <?php }?>>En Rendez-vous</option>
-                        <option value="HOS"<?php if (GetRoom($id)['status'] == "HOS") {?> selected <?php }?>>Hopital</option>
+                        <option value="HOS"<?php if (GetRoom($id)['status'] == "HOS") {?> selected <?php }?>>Hôpital</option>
                         <option value="SORT"<?php if (GetRoom($id)['status'] == "SORT") {?> selected <?php }?>>En sortie</option>
                         <option value="OTH"<?php if (GetRoom($id)['status'] == "OTH") {?> selected <?php }?>>Autre</option>
                     </select>

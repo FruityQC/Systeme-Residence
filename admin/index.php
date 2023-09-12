@@ -24,7 +24,7 @@ AdminOnly();
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Maisonnee D'Antan</a>
+        <a class="navbar-brand" href="#">Maisonnée D'Antan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,7 +49,7 @@ AdminOnly();
             <div class="col">
                 <div class="card mt-5">
                     <div class="card-header">
-                        <h2 class="display-6 text-center">Administration Maisonnee D'Antan</h2>
+                        <h2 class="display-6 text-center">Administration Maisonnée D'Antan</h2>
                     </div>
                     <div class="card-body">
 
@@ -62,8 +62,8 @@ AdminOnly();
                         <div class="d-grid gap-2 mb-1">
                             <a href="./actions/add_new.php" class="btn btn-success">Ajouter</a>
                         </div>
-                        <!-- <div class="d-grid gap-2 mb-3">
-                            <a href="../home.php" class="btn btn-danger">Retour</a>
+                        <!-- <div class="d-grid gap-2 mb-3"> ITS UGLY
+                            <a href="../home.php" class="btn btn-danger">Retour</a> 
                         </div> -->
                         <table class="table tablet-bordered text-center">
                             <tr class="bg-dark text-white">

@@ -19,7 +19,7 @@ if (isset($_POST['submit']) && isset($_GET['id'])) {
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("Location: ../home.php?msg=Chambre '$room' modifiee avec succes");
+        header("Location: ../home.php?msg=Chambre $room modifiée avec succès");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
