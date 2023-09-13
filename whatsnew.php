@@ -77,6 +77,7 @@ LoggedInOnly();
 
                    
                     <br><br><p class="fs-2 fw-bold text-decoration-underline">Modifications 🔨</p>
+                    🔐 Sécurité augmenter <br>
                     ✏️ Modification de la page d'administration <br>
                     ✏️ Corrections erreurs de frappe / traduction <br>
                 </div>
