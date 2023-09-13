@@ -63,7 +63,7 @@ AdminOnly();
                         <?php } ?>
 
                         <div class="d-grid gap-2 mb-1">
-                            <a href="./actions/add_new.php" class="btn btn-success">Ajouter</a>
+                            <a href="./actions/add_new.php" class="btn btn-success fw-semibold">Ajouter</a>
                         </div>
                         <!-- <div class="d-grid gap-2 mb-3"> ITS UGLY
                             <a href="../home.php" class="btn btn-danger">Retour</a> 
@@ -107,7 +107,7 @@ AdminOnly();
                 <div class="card mt-5 mb-5 p-3">
                     <p class="fw-bold"> <?php GetLog();?> </p>
                     <div class="d-grid gap-2 mb-1">
-                        <a href="./actions/resetLogs.php" class="btn btn-warning">Réinitialiser</a>
+                        <a href="./actions/resetLogs.php" class="btn btn-warning fw-semibold">Réinitialiser</a>
                     </div>
                 </div>
             </div>
