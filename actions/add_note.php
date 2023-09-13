@@ -17,6 +17,7 @@ if (isset($_POST['submit']) && isset($_GET['id'])) {
 
     if ($result) {
         header("Location: ../view.php?id=$room&msg=Note ajoutée avec succès");
+        LogAction($_SESSION['username'] . ' a ajouter une note a la chambre numero ' . $room);
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

@@ -45,6 +45,10 @@ if (!isset($_GET['id'])) {
                         </li>
                     <?php } ?>
 
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./whatsnew.php">Quoi de neuf ?</a>
+                    </li>
+
                 </ul>
                 <span class="navbar-text me-4 fs-6">Bonjour, <?php echo $_SESSION['username']; ?> </span>
                 <a class="btn btn-outline-danger me-2" type="button" href="./config/logout.php">Déconnexion</a>

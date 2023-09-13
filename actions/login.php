@@ -35,17 +35,21 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['admin'] = $row['admin'];
+                $_SESSION['last_activity'] = time();
                 
                 header('Location: ../home.php');
+                LogAction($_SESSION['username'] . " c'est connectée");
                 exit();
 
             }else{
                 header("Location: ../index.php?error=Aucune information d'identification correspondante n'a été trouvée !");
+                LogAction("Tentative de connexion échouée avec le nom d'utilisateur: $uname a partir de l'adresse IP: " . GetIP());
                 exit();
             }
 
         }else{
             header("Location: ../index.php?error=Aucune information d'identification correspondante n'a été trouvée !");
+            LogAction("Tentative de connexion échouée avec le nom d'utilisateur: $uname a partir de l'adresse IP: " . GetIP());
             exit();
         }
     }

@@ -36,6 +36,9 @@ AdminOnly();
             <li class="nav-item">
             <a class="nav-link active" href="./">Menu Administratif</a>
             </li>
+            <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../whatsnew.php">Quoi de neuf ?</a>
+            </li>
         </ul>
         <span class="navbar-text me-4 fs-6">Bonjour, <?php echo $_SESSION['username']; ?> </span>
         <a class="btn btn-outline-danger me-2" type="button" href="../config/logout.php">Déconnexion</a>
@@ -100,8 +103,17 @@ AdminOnly();
                         </table>
                     </div>
                 </div>
+
+                <div class="card mt-5 mb-5 p-3">
+                    <p class="fw-bold"> <?php GetLog();?> </p>
+                    <div class="d-grid gap-2 mb-1">
+                        <a href="./actions/resetLogs.php" class="btn btn-warning">Réinitialiser</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
 </body>
 </html>

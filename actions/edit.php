@@ -20,6 +20,7 @@ if (isset($_POST['submit']) && isset($_GET['id'])) {
 
     if ($result) {
         header("Location: ../home.php?msg=Chambre $room modifiée avec succès");
+        LogAction($_SESSION['username'] . ' a modifier la chambre numero ' . $room);
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }

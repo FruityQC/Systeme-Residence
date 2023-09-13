@@ -24,6 +24,7 @@ if (isset($_POST['submit'])) {
 
     if ($result) {
         header("Location: ../index.php?msg=$perm '$username' créé avec succès");
+        LogAction($_SESSION['username'] . " a ajouter l'utilisateur $username avec le role $perm");
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -42,12 +43,12 @@ if (isset($_POST['submit'])) {
     <title>Administration</title>
 </head>
 <body>
-    <nav class="navbar navbar-light justify-content-center fs-3 mb-5 bg-dark text-white">Administration Maisonnee D'Antan</nav>
+    <nav class="navbar navbar-light justify-content-center fs-3 mb-5 bg-dark text-white">Administration Maisonnée D'Antan</nav>
 
     <div class="container">
         <div class="text-center mb-4">
-            <h3>Add new user</h3>
-            <div class="text-muted">Complete the form below</div>
+            <h3>Ajouter nouveau utilisateur</h3>
+            <div class="text-muted">Veuillez remplir ci-dessous</div>
         </div>
 
         <div class="container d-flex justify-content-center">
@@ -55,13 +56,13 @@ if (isset($_POST['submit'])) {
                 <div class="row mb-3">
 
                     <div class="col">
-                        <label class="form-label">Username:</label>
+                        <label class="form-label">Nom d'utilisateur:</label>
                         <input type="text" class="form-control" name="username" placeholder="Albert Einstein">
                     </div>
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Password:</label>
+                    <label class="form-label">Mot de passe:</label>
                     <input type="text" class="form-control" name="password" placeholder="Albert123">
                 </div>
 
@@ -72,8 +73,8 @@ if (isset($_POST['submit'])) {
                     </label>
                 </div>
 
-                <button  type="submit" class="btn btn-success" name="submit">Save</button >
-                <a href="../index.php" class="btn btn-danger">Cancel</a>
+                <button  type="submit" class="btn btn-success" name="submit">Sauvegarder</button >
+                <a href="../index.php" class="btn btn-danger">Annuler</a>
             </form>
         </div>
     </div>

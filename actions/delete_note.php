@@ -14,5 +14,6 @@ $result = mysqli_query($conn, $sql);
 
 if ($result) {
     header("Location: ../view.php?id=$room&msg=Note Supprimer avec succès");
+    LogAction($_SESSION['username'] . ' a supprimer une note pour la chambre numero ' . $room);
 }
 ?>

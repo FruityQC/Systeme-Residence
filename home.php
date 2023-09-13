@@ -32,11 +32,16 @@ $rooms = display_rooms();
                         <a class="nav-link active" aria-current="page" href="./home.php">Menu Principale</a>
                     </li>
 
+
                     <?php if ($_SESSION['admin'] == 1) { ?>
                         <li class="nav-item">
                             <a class="nav-link" href="./admin/">Menu Administratif</a>
                         </li>
                     <?php } ?>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./whatsnew.php">Quoi de neuf ?</a>
+                    </li>
 
                 </ul>
                 <span class="navbar-text me-4 fs-6">Bonjour, <?php echo $_SESSION['username']; ?> </span>
